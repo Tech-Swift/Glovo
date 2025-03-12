@@ -27,3 +27,29 @@
     background-color: #218838;
     transform: scale(1.05);
 }
+
+ .footer {
+    display: flex;
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Align items in center */
+    background-color: #333;
+    padding: 20px;
+    color: white;
+}
+
+.footer-logo {
+    width: 100px; /* Adjust logo size */
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.social-icons img {
+    width: 25px;
+    margin: 5px;
+}
+
+
