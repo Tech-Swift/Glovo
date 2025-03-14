@@ -1,0 +1,272 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8e7e3;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff7e6;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Restaurant Section */
+.restaurants {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.restaurant {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Restaurant Images */
+.restaurant img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.restaurant img:hover {
+    transform: scale(1.1);
+}
+
+/* Restaurant Name Styling */
+.restaurant span {
+    background-color: #ffcc00;
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .restaurants {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .restaurants {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .restaurants {
+        grid-template-columns: repeat(1, 1fr); /* 1 column on very small screens */
+    }
+}
+
+/* Delivery Info Section */
+.delivery-info {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.delivery-info h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.delivery-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.option {
+    max-width: 300px;
+    text-align: center;
+}
+
+.option img {
+    width: 100px;
+    height: auto;
+}
+
+.option h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.option p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #333;
+}
+
+.explore-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: #e6b800;
+}
+
+/* Delivery Countries Section */
+.delivery-countries {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #797a55;
+}
+
+.delivery-countries h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.countries-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.countries-list span {
+    background: #ffcc00;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.countries-list span:hover {
+    background: #e6b800;
+}
+
+/* Download App Section */
+.download-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.download-app .content {
+    max-width: 500px;
+}
+
+.download-app img {
+    width: 200px;
+    height: auto;
+}
+
+.download-app h2 {
+    font-size: 2rem;
+}
+
+.download-app p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.store-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.store-buttons img {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Join Us Section */
+.join-us {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.join-us h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.join-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.option {
+    max-width: 300px;
+    text-align: center;
+}
+
+.option img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.option h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.option p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.register-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #e6b800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .restaurants, .delivery-options, .join-options {
+        flex-direction: column;
+        align-items: center;
+    }
+}

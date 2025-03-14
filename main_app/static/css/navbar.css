@@ -1,0 +1,70 @@
+/* Import Google Font for better typography */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Navbar container */
+nav {
+    background-color: #fdbd10; /* Glovo Yellow */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', Arial, sans-serif;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar container class */
+.container-navbar {
+    max-width: 1200px; /* Limits width to prevent excess spacing */
+    margin: 0 auto; /* Centers the navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* Logo styling */
+.logo img {
+    height: 45px;
+    object-fit: contain;
+}
+
+/* Login button */
+.navbar-btn {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    background: #008c5f; /* Glovo Green */
+    padding: 10px 22px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+/* Hover effect */
+.navbar-btn:hover {
+    background: #006c48; /* Slightly darker green */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        padding: 10px;
+    }
+
+    .container-navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img {
+        margin-bottom: 10px;
+    }
+}

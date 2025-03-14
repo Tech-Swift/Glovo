@@ -1,0 +1,49 @@
+{% load static %}
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>About Glovo</h3>
+            <p>Glovo delivers anything you need, fast and reliably.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Food Delivery</a></li>
+                <li><a href="#">Grocery Delivery</a></li>
+                <li><a href="#">Pharmacy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow us</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+
+        <div class="footer-section">
+            <a href="#"><img src="{% static 'images/app-store-button.svg' %}" alt="Download on the App Store"></a>
+            <a href="#"><img src="{% static 'images/google-play-button.svg' %}" alt="Get it on Google Play"></a>
+        </div>
+    </div>
+</footer>
